@@ -1,0 +1,21 @@
+type insertDocumentUpdateResponse {
+  success: Boolean!
+  message: String
+  insertedId: String
+}
+type replaceDocumentUpdateResponse {
+  success: Boolean!
+  message: String
+  upsertedId: String
+}
+
+type getTransactionUpdateResponse {
+  success: Boolean!
+  message: String
+  document: Transaction
+}
+type getTransactionsUpdateResponse {
+  success: Boolean!
+  message: String
+  documents: [Transaction]
+}

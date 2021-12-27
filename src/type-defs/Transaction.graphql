@@ -1,0 +1,58 @@
+type Transaction {
+  _id: String!
+  name: String!
+  itemId: String
+  store: String!
+  city: String!
+  date: String!
+  currency: String!
+  price: String
+  unit: String
+  amount: String
+  tax: String
+  cost: String!
+  comment: String
+}
+
+type Query {
+  getTransactionById(
+    _id: String!
+  ): getTransactionUpdateResponse!
+}
+type Query {
+  getAllTransactions: getTransactionsUpdateResponse!
+}
+
+type Mutation {
+  createTransaction(
+    name: String!
+    itemId: String
+    store: String!
+    city: String!
+    date: String!
+    currency: String!
+    price: String
+    unit: String
+    amount: String
+    tax: String
+    cost: String!
+    comment: String
+  ): insertDocumentUpdateResponse!
+}
+type Mutation {
+  replaceTransaction(
+    _id: String!
+    name: String!
+    itemId: String
+    store: String!
+    city: String!
+    date: String!
+    currency: String!
+    price: String
+    unit: String
+    amount: String
+    tax: String
+    cost: String!
+    comment: String
+  ): replaceDocumentUpdateResponse!
+}

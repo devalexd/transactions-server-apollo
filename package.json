@@ -1,0 +1,24 @@
+{
+  "name": "transactions-server-apollo",
+  "version": "1.0.0",
+  "description": "Back-end of Transactions App",
+  "engines": {
+    "node": "17.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@graphql-tools/merge": "^8.2.1",
+    "@graphql-tools/load-files": "^6.5.3",
+    "apollo-server": "^3.5.0",
+    "dotenv": "^10.0.0",
+    "graphql": "^16.2.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.2.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
