@@ -7,7 +7,7 @@ type Transaction {
   date: String!
   currency: String!
   price: String
-  unit: String
+  unit: String!
   amount: String
   tax: String
   cost: String!
