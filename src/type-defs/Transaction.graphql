@@ -4,7 +4,7 @@ type Transaction {
   itemId: String
   store: String!
   city: String!
-  date: String!
+  date: Date!
   currency: String!
   price: String
   unit: String!

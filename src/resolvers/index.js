@@ -1,3 +1,5 @@
+const { dateScalar } = require('./scalar-resolvers');
+
 const {
   getTransactionByIdQueryResolver,
   getAllTransactionsQueryResolver,
@@ -6,6 +8,7 @@ const {
 } = require('./transaction-resolvers');
 
 module.exports = (targetCollection) => ({
+  Date: dateScalar,
   Query: {
     getTransactionById: getTransactionByIdQueryResolver(targetCollection),
     getAllTransactions: getAllTransactionsQueryResolver(targetCollection),
