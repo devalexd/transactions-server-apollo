@@ -27,7 +27,7 @@ const getTransactionByIdQueryResolver = (targetCollection) => (
 const getAllTransactionsQueryResolver = (targetCollection) => (
   async (_, args) => {
     return targetCollection('transactions').find({})
-    .sort({ date: -1 })
+    .sort({ date: -1, store: 1 })
     .toArray()
     .then((transactions) => ({
       success: true,
